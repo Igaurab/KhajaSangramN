@@ -62,7 +62,7 @@ public class RestaurantDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurant_details);
+        setContentView(R.layout.restaurant_details_new);
 
         recyclerView = findViewById(R.id.reviewrecycler);
 
