@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.khajasangram.Classes.Restaurant_SQLite_comparision;
@@ -53,7 +54,6 @@ public class Search_fragment extends Fragment {
         compare_rating = view.findViewById(R.id.compare_rating);
         compare_price = view.findViewById(R.id.compare_price);
         container1 = view.findViewById(R.id.container1);
-
         first_layout.setVisibility(View.VISIBLE);
         compare_criteria_layout.setVisibility(View.INVISIBLE);
 
@@ -66,8 +66,9 @@ public class Search_fragment extends Fragment {
                     @Override
                     public void onClick(View view) {
                         compare_rating.setBackgroundResource(R.drawable.menu_item_pressed);
-                        compare_price.setBackgroundResource(R.drawable.rec_box_rounded_corner);
 
+                        compare_price.setBackgroundResource(R.drawable.rec_box_rounded_corner);
+//                        mRatings.setTextColor(ContextCompat.getColor(getContext(), R.color.white));
                         container1.removeAllViews();
                         display_restaurant_rating();
 

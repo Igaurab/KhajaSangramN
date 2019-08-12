@@ -106,7 +106,7 @@ public class Try_fragment extends Fragment {
                     loc1.setLatitude(Double.valueOf(user_latitude));
                     loc1.setLongitude(Double.valueOf(user_longitude));
 
-                    Toast.makeText(getContext(), "lat= "+user_latitude, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getContext(), "lat= "+user_latitude, Toast.LENGTH_SHORT).show();
                 }
 
                 @Override

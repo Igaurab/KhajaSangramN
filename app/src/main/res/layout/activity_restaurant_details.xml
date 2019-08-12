@@ -26,9 +26,9 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
+
         <ImageView
             android:scaleType="fitXY"
-            android:id="@+id/res_image"
             android:layout_width="match_parent"
             android:layout_height="200dp" />
 
@@ -40,7 +40,7 @@
             <TextView
                 android:textStyle="bold"
                 android:gravity="center"
-                android:id="@+id/res_name"
+
                 android:text="Name of restaurant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

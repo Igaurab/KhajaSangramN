@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RestaurantDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".resdetails">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:background="@drawable/firewatch" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/res_image"
+            android:layout_marginTop="70dp"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/white"
+            android:src="@drawable/img_compare"
+            />
+
+        <TextView
+            android:id="@+id/res_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/res_image"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="Name of resaurant"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/white_rounded_border"
+            android:layout_below="@id/res_name"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="30dp"
+            >
+            <LinearLayout
+                android:id="@+id/menu"
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/res_location"
+                android:layout_gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="60dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/res_contact"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
