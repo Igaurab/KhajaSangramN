@@ -5,7 +5,17 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".RestaurantDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+    </LinearLayout>
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -52,7 +62,8 @@
             android:layout_marginTop="55dp"
             android:gravity="center"
             android:text="Address of restaurant"
-            android:textSize="14dp"/>
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
 
         <LinearLayout
             android:id="@+id/linearLayoutOptions"
@@ -68,9 +79,9 @@
             <LinearLayout
                 android:id="@+id/menu"
                 android:layout_gravity="center_vertical"
-                android:layout_width="60dp"
-                android:layout_marginLeft="50dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_marginLeft="45dp"
+                android:layout_height="50dp"
                 >
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="wrap_content"
@@ -81,9 +92,9 @@
             <LinearLayout
                 android:id="@+id/res_location"
                 android:layout_gravity="center_vertical"
-                android:layout_width="60dp"
+                android:layout_width="50dp"
                 android:layout_marginLeft="50dp"
-                android:layout_height="60dp">
+                android:layout_height="50dp">
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -92,8 +103,8 @@
 
             <LinearLayout
                 android:id="@+id/res_contact"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="50dp">
                 <de.hdodenhof.circleimageview.CircleImageView
@@ -186,7 +197,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_below="@+id/text_user_reviews"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/reviewrecycler"
