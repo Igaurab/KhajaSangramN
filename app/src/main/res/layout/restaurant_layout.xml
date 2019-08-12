@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/linearlayout"
     android:layout_margin="10dp"
+    android:elevation="10dp"
     >
 
 

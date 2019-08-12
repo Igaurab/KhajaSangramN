@@ -141,7 +141,6 @@ public class RestaurantDetails extends AppCompatActivity {
 
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //actionbar.setHomeAsUpIndicator(R.drawable.ic_arrow_back_black_24dp);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

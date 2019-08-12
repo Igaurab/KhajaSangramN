@@ -124,6 +124,28 @@
             android:layout_below="@id/linearLayoutOptions"
             android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:id="@+id/LinearLayoutdescription"
+            android:layout_below="@id/avg_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/res_description"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
 
         <LinearLayout
             android:id="@+id/linearLayoutProvideUserRatings"
@@ -133,21 +155,13 @@
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:layout_below="@id/avg_rating"
-
+            android:layout_below="@id/LinearLayoutdescription"
+            android:background="@drawable/white_rounded_border"
+            android:elevation="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/res_description"
-                android:textSize="16sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="20dp"/>
+
             <TextView
                 android:textStyle="bold"
                 android:text="Rate this restaurant"

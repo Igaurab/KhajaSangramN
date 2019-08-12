@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@color/grey"
-    tools:context=".MenudisplayActivity">
+    android:background="@drawable/firewatch"
+    tools:context=".MenudisplayActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,6 +20,17 @@
             android:background="@color/background"
             app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
     </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="MENU"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            />
 
     <ScrollView
         android:layout_width="match_parent"
